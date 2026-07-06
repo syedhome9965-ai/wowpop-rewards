@@ -2,41 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>WOWPOP Rewards | Fan Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WOWPOP Rewards</title>
 
   <style>
-    body{
-      margin:0;
-      background:#0d0d0d;
-      color:white;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      font-family:Arial,sans-serif;
-      text-align:center;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top, #1b1b1b, #000);
+      color: #fff;
     }
 
-    h1{
-      color:#FFD700;
-      font-size:38px;
+    header {
+      padding: 20px;
+      text-align: center;
+      background: linear-gradient(90deg, #ff9800, #ff5722);
+      color: #000;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
-    p{
-      font-size:18px;
-      color:#ddd;
+    .container {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .rewards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #ff9800;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 0 25px #ff9800;
+    }
+
+    .card h3 {
+      color: #ff9800;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #ff9800, #ff5722);
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 15px #ff9800;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.6;
     }
   </style>
 </head>
 
 <body>
 
-<div>
-<h1>🏆 Hello Champion!</h1>
-<p>Welcome to WOWPOP Rewards</p>
-<p>Premium Website Coming Soon... 🎁</p>
+<header>
+  WOWPOP WEEKLY REWARDS
+</header>
+
+<div class="container">
+  <h2>Lucky Rewards (Demo)</h2>
+
+  <div class="rewards">
+    <div class="card">
+      <h3>UC Rewards</h3>
+      <p>Spin & unlock demo UC rewards.</p>
+      <button class="btn">Try Luck</button>
+    </div>
+
+    <div class="card">
+      <h3>Legendary Outfit</h3>
+      <p>Exclusive WOW outfit (Demo)</p>
+      <button class="btn">Reveal</button>
+    </div>
+
+    <div class="card">
+      <h3>Weapon Skin</h3>
+      <p>Animated gun skin reward</p>
+      <button class="btn">Open</button>
+    </div>
+  </div>
 </div>
+
+<footer>
+  This is a fan-made demo website. Not affiliated with or endorsed by PUBG Mobile.
+</footer>
 
 </body>
 </html>
